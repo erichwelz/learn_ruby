@@ -10,7 +10,10 @@ Finish Titleize
 
   needs to capitalize multiple words in an array
 
+  05_yield > better understand .times solution
+
 DONE:
 
 00_hello
 01_temperature
+04_piglatin
