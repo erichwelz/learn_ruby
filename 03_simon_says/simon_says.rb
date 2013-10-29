@@ -22,12 +22,28 @@ def first_word(input)
   input.split(' ')[0]
 end
 
-def titleize(input)
-  input.split(' ').each {|word| 
-    if word == "and" or word == "over" or word == "the"
-      word
-    else word.capitalize!
-    end
-      }.join(' ')
+  def titleize(input)     
+    str = ''
+    input.split(' ').each_with_index do |word, index|
+      if index > 0
+              str += " "
+      end
 
-end
+      if ((word == "and") or (word == "over") or (word == "the")) and (index != 0)
+              temp = word
+      else
+              temp = word[0].upcase + word[1..word.length-1]
+      end
+      str += temp
+      end
+    str
+  end
+
+# def titleize(input)
+#   input.split(' ').each {|word| 
+#     if word == "and" or word == "over" or word == "the"
+#       word
+#     else word.capitalize!
+#     end
+#       }.join(' ')
+# end
