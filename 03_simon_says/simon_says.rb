@@ -19,11 +19,15 @@ def start_of_word(input, i)
 end
 
 def first_word(input)
-  first = input.split(' ')
-  return first[0]
+  input.split(' ')[0]
 end
 
 def titleize(input)
-  array = input.split(' ')
-  return array[0].capitalize
+  input.split(' ').each {|word| 
+    if word == "and" or word == "over" or word == "the"
+      word
+    else word.capitalize!
+    end
+      }.join(' ')
+
 end

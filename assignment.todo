@@ -1,19 +1,15 @@
 
 Todo:
-02_Calculator-bonus
-- pass multiply any num test
-- pass factorial test
+03_Simon_says - finish Titleize
 
-03_Simon_says
+needs to capitalize multiple words in an array
 
-Finish Titleize
 
-  needs to capitalize multiple words in an array
+07_get first block to ALWAYS capitalize
 
-  05_yield > better understand .times solution
 
-DONE:
-
-00_hello
-01_temperature
-04_piglatin
+Done:
+00
+01
+02 w/bonus
+08

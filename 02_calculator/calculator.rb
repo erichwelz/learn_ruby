@@ -8,13 +8,14 @@ end
 
 def sum(arr)
     num = 0
-    arr.each do |arr| num += arr
-    end
+    arr.each { |arr| num += arr }
     return num   
 end
 
-def multiply(*nums)
-  nums.inject(0Test)
+def multiply(*numbers)
+  numbers.inject(:*) 
 end
 
-multiply(5,5,7)
+def factorial(number)
+    (1..number).inject(:*) or 1
+end
